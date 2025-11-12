@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+body {
+    /* Mengganti latar belakang dengan gambar stempel vintage */
+    background-image: url('bg-kotu.jpg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.7); /* Latar belakang semi-transparan putih */
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 350px;
+    backdrop-filter: blur(2px); /* Efek blur ringan pada latar belakang */
+}
+
+.title {
+    font-family: 'Merriweather', serif;
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: #ffe6aa; /* Warna kuning muda seperti di gambar */
+    border-radius: 50px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0c88c;
+    height: 40px; /* Tinggi input */
+}
+
+.input-group .icon {
+    color: #8B4513; /* Warna cokelat untuk ikon/label */
+    font-weight: bold;
+    margin-right: 10px;
+    white-space: nowrap; /* Mencegah label terpotong */
+}
+
+.input-group input {
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+    padding: 0 5px;
+    outline: none;
+    font-size: 1em;
+    color: #333;
+}
+
+.login-button {
+    background-color: #ffaa70; /* Warna oranye muda untuk tombol */
+    color: #333;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    width: 70%;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-button:hover {
+    background-color: #e09360; /* Warna sedikit lebih gelap saat di-hover */
+}
+
+.login-button i {
+    margin-right: 8px;
+}

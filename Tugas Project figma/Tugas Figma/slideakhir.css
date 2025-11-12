@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;700&display=swap');
+
+body {
+    /* **PENTING:** Ganti URL ini dengan lokasi gambar latar belakang stempel Anda */
+    background-image: url('bg-kotu.jpg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main-container.thank-you-page {
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 30px; /* Padding lebih kecil */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 650px; /* Lebih lebar untuk info kontak */
+    width: 90%;
+    position: relative; 
+    backdrop-filter: blur(2px);
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #fce8a6; 
+    color: #8B4513;
+    border: 2px solid #8B4513;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #f7d77b;
+}
+
+.content-wrapper {
+    margin-top: 20px; /* Lebih kecil karena tidak ada judul besar */
+    position: relative; /* Untuk penempatan stiker "Thank You" */
+}
+
+.thank-you-message {
+    font-family: 'Merriweather', serif;
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    padding: 0 20px;
+}
+
+.thank-you-message .emoji {
+    font-size: 1em; /* Emoji di dalam teks */
+    vertical-align: middle;
+}
+
+.contact-info-box {
+    display: flex;
+    flex-wrap: wrap; /* Mengatur item agar bisa ke baris baru */
+    justify-content: space-around;
+    background-color: #ffaa70; /* Warna oranye muda */
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: left; /* Teks di dalam kotak menjadi rata kiri */
+    gap: 20px; /* Jarak antar section */
+}
+
+.footer-logo {
+    width: 50px;       /* Sesuaikan ukuran lebar logo */
+    height: auto;      /* Biarkan tinggi menyesuaikan proporsi */
+    margin-bottom: 5px; /* Jarak antara logo dan judul Travel Journal */
+    display: block;    /* Agar logo menempati satu baris penuh */
+    margin-left: 0;    /* Agar logo rata kiri */
+}
+
+.info-section {
+    flex: 1 1 calc(50% - 20px); /* Dua kolom di desktop, satu di mobile */
+    min-width: 200px;
+    padding: 5px;
+}
+
+.info-section p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 0.95em;
+}
+
+.section-title {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #8B4513; /* Warna coklat */
+    margin-bottom: 10px;
+    text-align: center; /* Judul section tetap rata tengah */
+}
+
+.social-media-section {
+    flex: 1 1 100%; /* Selalu satu kolom penuh untuk media sosial */
+    padding: 10px 0;
+    text-align: center; /* Rata tengah untuk media sosial */
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    font-size: 2.5em;
+    margin: 0 10px;
+    color: #333; /* Warna ikon default */
+    transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.instagram-color { color: #E4405F; } /* Warna ikon spesifik */
+.facebook-color { color: #3b5998; }
+.youtube-color { color: #FF0000; }
+
+
+.copyright {
+    font-size: 0.85em;
+    color: #555;
+    margin-top: 20px;
+}
+
+.thank-you-sticker {
+    position: absolute;
+    top: -50px; /* Sesuaikan posisi vertikal */
+    right: -50px; /* Sesuaikan posisi horizontal */
+    width: 150px; /* Ukuran stiker */
+    height: auto;
+    transform: rotate(15deg); /* Sedikit rotasi */
+    z-index: 10;
+}
+
+.thank-you-sticker img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.3)); /* Bayangan untuk stiker */
+}
+
+/* Media Query untuk tata letak mobile */
+@media (max-width: 768px) {
+    .contact-info-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .info-section {
+        flex: 1 1 100%;
+        min-width: unset;
+        width: 100%;
+    }
+    .section-title {
+        margin-top: 15px;
+    }
+    .social-media-section {
+        margin-top: 15px;
+    }
+    .thank-you-sticker {
+        width: 100px; /* Lebih kecil di mobile */
+        top: -30px;
+        right: -30px;
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Activities</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="slide6.css">
+</head>
+<body>
+    <div class="main-container question-page">
+        
+        <a href="slide5.html" class="back-button" onclick="goBack()">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+
+        <div class="content-wrapper">
+            <h1 class="title">
+                Things You Did Today
+            </h1>
+            
+            <form id="activitiesForm">
+                <label for="activitiesAnswer" class="answer-label">answer :</label>
+
+                <textarea 
+                    id="activitiesAnswer" 
+                    class="answer-box" 
+                    rows="8" 
+                    placeholder="Tuliskan aktivitas Anda hari ini..." 
+                    required>
+                </textarea>
+
+                <a href="slide7.html" target="_blank" type="submit" class="action-button next-button-style">
+                    Next
+                </a>
+            </form>
+        </div>
+    </div>
+
+    <script src="activities_script.js"></script>
+</body>
+</html>

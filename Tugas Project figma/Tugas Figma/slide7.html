@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Do You Feel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="slide7.css">
+</head>
+<body>
+    <div class="main-container question-page">
+        
+        <a href="slide6.html" class="back-button" onclick="goBack()">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+
+        <div class="content-wrapper">
+            <h1 class="title">
+                How Do You Feel Today
+            </h1>
+            
+            <form id="feelForm">
+                <label for="feelAnswer" class="answer-label">answer :</label>
+
+                <textarea 
+                    id="feelAnswer" 
+                    class="answer-box" 
+                    rows="8" 
+                    placeholder="Tuliskan perasaan Anda hari ini..." 
+                    required>
+                </textarea>
+
+                <a href="slide8.html" target="_blank" type="submit" class="action-button next-button-style">
+                    Next
+                </a>
+            </form>
+        </div>
+    </div>
+
+    <script src="question_feel_script.js"></script>
+</body>
+</html>

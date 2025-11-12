@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Best Moment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="slide4.css">
+</head>
+<body>
+    <div class="survey-container">
+        
+        <a href="slide3.html" class="back-button" onclick="goBack()">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+
+        <div class="content-wrapper">
+            <h1 class="title">
+                Today's Best Momen
+            </h1>
+            
+            <form id="momentForm">
+                <label for="momentAnswer" class="answer-label">answer :</label>
+
+                <textarea 
+                    id="momentAnswer" 
+                    class="answer-box" 
+                    rows="8" 
+                    placeholder="Ceritakan momen terbaik Anda hari ini di sini..." 
+                    required>
+                </textarea>
+
+                <a href="slide5.html" target="_blank" type="submit" class="next-button">
+                    Next
+                </a>
+            </form>
+        </div>
+    </div>
+
+    <script src="moment_script.js"></script>
+</body>
+</html>
